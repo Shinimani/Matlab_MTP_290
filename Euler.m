@@ -11,10 +11,10 @@ z(1)=ya;
 w(1)=ya;
 u(1)=ya;
 for i = 1:(length(x)-1)
-    %Heun's
+    %Euler's
     z(i+1) = z(i) + h*(f(x(i),z(i)))
     
-    %Euler's
+    %Heun's
     y(i+1) = y(i) + h*(f(x(i),y(i)) + f(x(i+1),z(i+1)))/2
     
     %RK2
